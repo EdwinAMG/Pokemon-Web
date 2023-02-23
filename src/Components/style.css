@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     padding: 0;
-    margin: 0;
+    margin: 0;  
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #FCEEC8;
+    background-color: #FCEEC8; 
 }
-.container{
+.container{ /*Este es el cuadro azul en el que estan las imagenes de los pokemon*/
     width: 90%;
-    margin: auto;
+    margin: auto;   
     padding-top: 100px;
     display: flex;
 }
 .left-content,.right-content{
     flex-basis: 50%;
 }
-.left-content{
+.left-content{   
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
     grid-gap:2rem;
 }
-.card{
+.card{   /*Aquí se le organiza la estetica, ubicación y tamaño al contenedor*/
     width: 300px;
     background-color:#9EDEF9;
     border-radius: 1rem;
