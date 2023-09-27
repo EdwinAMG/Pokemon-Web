@@ -13,6 +13,7 @@ body{
     padding-top: 100px;
     display: flex;
 }
+
 .left-content,.right-content{
     flex-basis: 50%;
 }
@@ -21,6 +22,7 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
     grid-gap:2rem;
 }
+
 .card{   /*Aquí se le organiza la estetica, ubicación y tamaño al contenedor*/
     width: 300px;
     background-color:#9EDEF9;
@@ -32,6 +34,11 @@ body{
     justify-content: space-between;
     box-sizing: border-box;
 }
+.card:hover{
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
 .right-content{
     width: 50%;
     text-align: center;
@@ -40,14 +47,31 @@ body{
     top:100px;
     right: 10px;
 }
+
+.contenedor{
+    width: 250px;
+    margin-left: 188px;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
 .right-content img{
     margin: 1.5rem;
     height: 160px;
 }
 .right-content h1{
+    font-family: "Arial", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    background: -webkit-linear-gradient(#22dd92, #3e497a);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+    
 }
 .abilities{
     width: 70%;

@@ -8,11 +8,13 @@ const Pokeinfo = ({ data }) => {
       ) : (
         <>
           <h1>{data.name}</h1>
-          <img
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`}
-            alt=""
-            /*URL para traer las imagenes de todos los pokemons a la derecha con su información*/
-          />
+          <div className="contenedor">
+            <img
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`}
+              alt=""
+              /*URL para traer las imagenes de todos los pokemons a la derecha con su información*/
+            />
+          </div>
           {/*Traemos la información de las habilidades de cada pokemon*/}
           <div className="abilities">
             {data.abilities.map((poke) => {
