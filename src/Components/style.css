@@ -107,3 +107,48 @@ body{
     background-color: #b74555;
     border-radius: 8px;
 }
+.btn-group:hover{
+    box-shadow: 0px 3px 15px rgba(255, 177, 177, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .contenedor{
+        width: 250px;
+        margin-left: 40px;
+        background: rgba(255, 255, 255, 0.22);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(255, 255, 255, 0.29);
+    }
+    .right-content img{
+        margin: 1.5rem;
+        height: 160px;
+        margin-left: 29px;
+    }
+    .right-content h1{
+        margin-left: 25px;
+    }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+          align-items: center; /* Centra el contenido en dispositivos móviles */
+        }
+      
+        .left-content {
+          width: 100%; /* Asegura que la sección izquierda ocupe el ancho completo */
+        }
+      
+        .right-content {
+          width: 100%; /* Asegura que la sección derecha ocupe el ancho completo */
+          position: static; /* Elimina la posición fija para que el contenido fluya */
+          top: auto;
+          right: auto;
+        }
+      }
+      

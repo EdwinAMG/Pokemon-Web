@@ -1,6 +1,7 @@
 import React from "react";
 const Card = ({ pokemon, loading, infoPokemon }) => {
   // console.log(pokemon);
+
   return (
     <>
       {
